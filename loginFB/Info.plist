@@ -24,6 +24,21 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>URL Types</key>
+	<array>
+		<dict>
+			<key>Document Role</key>
+			<string>Editor</string>
+			<key>URL Schemes</key>
+			<array>
+				<string>fb714666421986157</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>714666421986157</string>
+	<key>FacebookDisplayName</key>
+	<string>loginSocial</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

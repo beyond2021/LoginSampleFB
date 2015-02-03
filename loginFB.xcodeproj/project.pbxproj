@@ -14,6 +14,7 @@
 		220DEAF61A818C28003C8028 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220DEAF51A818C28003C8028 /* Images.xcassets */; };
 		220DEAF91A818C28003C8028 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220DEAF71A818C28003C8028 /* LaunchScreen.xib */; };
 		220DEB051A818C28003C8028 /* loginFBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 220DEB041A818C28003C8028 /* loginFBTests.m */; };
+		220DEB0F1A8193B3003C8028 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220DEB0E1A8193B3003C8028 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		220DEAFE1A818C28003C8028 /* loginFBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginFBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		220DEB031A818C28003C8028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		220DEB041A818C28003C8028 /* loginFBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginFBTests.m; sourceTree = "<group>"; };
+		220DEB0E1A8193B3003C8028 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220DEB0F1A8193B3003C8028 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		220DEAE71A818C28003C8028 /* loginFB */ = {
 			isa = PBXGroup;
 			children = (
+				220DEB101A8193BD003C8028 /* Frameworks */,
 				220DEAEC1A818C28003C8028 /* AppDelegate.h */,
 				220DEAED1A818C28003C8028 /* AppDelegate.m */,
 				220DEAEF1A818C28003C8028 /* ViewController.h */,
@@ -117,6 +121,14 @@
 				220DEB031A818C28003C8028 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		220DEB101A8193BD003C8028 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				220DEB0E1A8193B3003C8028 /* FacebookSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +355,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/keevinmitchell/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = loginFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +369,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/keevinmitchell/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = loginFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
