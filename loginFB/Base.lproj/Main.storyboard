@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xx6-Nz-jeo" customClass="FBLoginView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xx6-Nz-jeo" customClass="FBLoginView">
                                 <rect key="frame" x="60" y="430" width="200" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.48037684530000002" blue="0.65529398059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
@@ -30,19 +31,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDH-JF-FXp" customClass="FBProfilePictureView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDH-JF-FXp" customClass="FBProfilePictureView">
                                 <rect key="frame" x="85" y="61" width="150" height="150"/>
                                 <color key="backgroundColor" red="1" green="0.48037684530000002" blue="0.65529398059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ap5-5c-gOb"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLJ-pe-fG1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLJ-pe-fG1">
                                 <rect key="frame" x="20" y="219" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BL-b2-uGC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BL-b2-uGC">
                                 <rect key="frame" x="20" y="248" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Hva-AQ-c6c"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,10 +57,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6BL-b2-uGC" firstAttribute="leading" secondItem="zLJ-pe-fG1" secondAttribute="leading" id="0xq-05-1Fn"/>
+                            <constraint firstItem="xx6-Nz-jeo" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="430" id="3y9-P7-JK0"/>
+                            <constraint firstItem="zLJ-pe-fG1" firstAttribute="centerX" secondItem="xx6-Nz-jeo" secondAttribute="centerX" id="5Qi-c9-wxG"/>
                             <constraint firstItem="GH3-1N-IfY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="7L5-F7-lPz"/>
                             <constraint firstItem="GH3-1N-IfY" firstAttribute="top" secondItem="c7f-rF-j4U" secondAttribute="bottom" constant="12" id="84z-aI-dTF"/>
+                            <constraint firstAttribute="centerX" secondItem="BDH-JF-FXp" secondAttribute="centerX" id="9nT-oD-lUG"/>
+                            <constraint firstItem="BDH-JF-FXp" firstAttribute="top" secondItem="GH3-1N-IfY" secondAttribute="bottom" constant="8" id="JyR-9d-7BH"/>
+                            <constraint firstItem="zLJ-pe-fG1" firstAttribute="leading" secondItem="GH3-1N-IfY" secondAttribute="leading" id="Ldk-n9-7Wt"/>
+                            <constraint firstItem="H0i-Ae-W1X" firstAttribute="top" secondItem="xx6-Nz-jeo" secondAttribute="bottom" constant="88" id="OTu-QC-3mg"/>
+                            <constraint firstItem="6BL-b2-uGC" firstAttribute="top" secondItem="zLJ-pe-fG1" secondAttribute="bottom" constant="8" symbolic="YES" id="VH2-7o-V2F"/>
                             <constraint firstAttribute="centerX" secondItem="GH3-1N-IfY" secondAttribute="centerX" id="XFp-qJ-36i"/>
+                            <constraint firstItem="zLJ-pe-fG1" firstAttribute="trailing" secondItem="GH3-1N-IfY" secondAttribute="trailing" id="XPK-oK-wUd"/>
+                            <constraint firstItem="zLJ-pe-fG1" firstAttribute="top" secondItem="BDH-JF-FXp" secondAttribute="bottom" constant="8" symbolic="YES" id="jJU-eO-1Rv"/>
                             <constraint firstAttribute="trailing" secondItem="GH3-1N-IfY" secondAttribute="trailing" constant="20" id="qSk-Mb-6rh"/>
+                            <constraint firstItem="6BL-b2-uGC" firstAttribute="centerX" secondItem="xx6-Nz-jeo" secondAttribute="centerX" id="v9J-W2-Dwn"/>
+                            <constraint firstItem="BDH-JF-FXp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="69" id="wOP-9b-Da2"/>
+                            <constraint firstItem="xx6-Nz-jeo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="44" id="wgp-So-TvS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BDH-JF-FXp" secondAttribute="trailing" constant="69" id="yS7-9e-sx4"/>
                         </constraints>
                     </view>
                     <connections>

@@ -45,5 +45,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+//FB Methoc
+//The iOS will call this method after the user has authorized the app through Safari of the Facebook app
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    
+    //let Facebook SDK handle the login result and modify the login view accordingly. Behind the scenes, the authentication token received by Facebook will be persistently stored, and the session state will get changed
+    
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication];
+}
 
 @end
