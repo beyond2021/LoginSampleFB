@@ -355,10 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/keevinmitchell/Documents/FacebookSDK,
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"/Users/keevinmitchell/Documents/FacebookSDK\"";
 				INFOPLIST_FILE = loginFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,10 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/keevinmitchell/Documents/FacebookSDK,
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"/Users/keevinmitchell/Documents/FacebookSDK\"";
 				INFOPLIST_FILE = loginFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +426,7 @@
 				220DEB0A1A818C28003C8028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		220DEB0B1A818C28003C8028 /* Build configuration list for PBXNativeTarget "loginFBTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +435,7 @@
 				220DEB0D1A818C28003C8028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
